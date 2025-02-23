@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:latest
+    container_name: Hola_Mundo_En_Nginx_Usando_Docker
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/usr/share/nginx/html
